@@ -56,6 +56,19 @@ print("Hulk" not in Heroes)#True
 print("Antman" in Heroes)#False
 
 #6. Identity Operators
-
+a = [1,2,3]
+b = a
+c = [1,2,3]
+print(a is b)#True(Both refer to the same object)
+print(a is c)#False(Different objects with the same content)
+print(a is not c)#True
 
 #7. Bitwise Operators
+a = 5 #Binary: 0101
+b = 3 #Binary: 0011
+print("Bitwise AND (&): a & b =", a & b) #Bitwise AND (&): a & b = 1
+print("Bitwise OR (|): a | b =", a | b) #Bitwise OR (|): a | b = 7
+print("Bitwise XOR (^): a ^ b =", a ^ b) #Bitwise XOR (^): a ^ b = 6
+print("Bitwise NOT (~): ~a =", ~a) #-Bitwise NOT (~): ~a = -6
+print("Left Shift (<<): a << 1 =", a << 1) #Left Shift (<<): a << 1 = 10
+print("Right Shift (>>): a >> 1 =", a >> 1) #Right Shift (>>): a >> 1 = 2
