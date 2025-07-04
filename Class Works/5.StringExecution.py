@@ -171,3 +171,166 @@ names.count('i') #3
 names.count('r') #3
 
 #4.String Testing Methods
+#startswith(sub)
+
+'PFS15'.startswith('DS') #False
+'JFS15'.startswith('DS') #False
+'DS15'.startswith('DS') #True
+l=['PFS14','DS-11','DA-14','PFS-15','JS-12','DS-15','DS-14']
+for i in l:
+    if i.startswith('DS'):
+        print(i) #DS-11 DS-15 DS-14
+
+#endswith(sub)
+
+l=['hello.py','demo.png','resume.pdf','oper.py','python.py']
+for i in l:
+    if i.endswith('.py'):
+        print(i) #hello.py oper.py python.py
+
+#isalpha()
+
+s='sowmya'
+s.isalpha() #True
+s='varun123'
+s.isalpha() #False
+
+#isalnum()
+
+s.isalnum() #True
+
+#islower()
+
+s.islower() #True
+
+#isupper()
+
+s.isupper() #False
+
+#isspace
+
+s.isspace() #False
+' '.isspace() #True
+'     '.isspace() #True
+
+#isidentifier()
+
+'@myvae'.isidentifier() #False
+'my_var'.isidentifier() #True
+
+#isdigit()
+
+'١٢٣'.isdigit() #True
+'123'.isdigit() #True
+'⓫'.isdigit() #False
+'۵'.isdigit() #True
+
+#isnumeric()
+
+'五'.isnumeric() #True
+
+#5.Replace & Modify Methods
+#replace(old,new)
+
+s='Tatik'
+s.replace('i','ee') #'Tateek'
+s='python pgrm lang'
+s.replace(' ','') #'pythonpgrmlang'
+s #'python pgrm lang'
+
+#maketrans()
+
+pwd='harshith@123'
+pwd.translate(str.maketrans("a13h", "@o#8")) #'8@rs8it8@o2#'
+pwd.translate(str.maketrans("@o#8", "a13h")) #'harshitha123'
+"harshit".maketrans("a13h", "@o#8") #{97: 64, 49: 111, 51: 35, 104: 56}
+pwd.maketrans("a13h", "@o#8") #{97: 64, 49: 111, 51: 35, 104: 56}
+
+#6.Splitting & Joining Methods
+#split(sep)
+
+s='My name is Tarit'
+s.split() #['My', 'name', 'is', 'Tarit']
+s.split('a') #['My n', 'me is T', 'rit']
+i='Varun,Harshith,Hemanth'
+i.split(',') #['Varun', 'Harshith', 'Hemanth']
+s #'My name is Tarit'
+s.split() #['My', 'name', 'is', 'Tarit']
+
+#rsplit(sep)
+
+s.rsplit(' ',2) #['My name', 'is', 'Tarit']
+
+#splitlines()
+
+file='''Hello
+world
+python
+program
+'''
+file #'Hello\nworld\npython\nprogram\n'
+file.splitlines() #['Hello', 'world', 'python', 'program']
+
+#join(iterable)
+
+file=['Hello', 'world', 'python', 'program']
+''.join(file) #'Helloworldpythonprogram'
+' '.join(file) #'Hello world python program'
+'@'.join(file) #'Hello@world@python@program'
+','.join(file) #'Hello,world,python,program'
+
+#partition(sep)
+
+'pythonprgm.py'.partition('.') #('pythonprgm', '.', 'py')
+
+#rpartition(sep)
+
+'pythonprgm.file.py'.rpartition('.') #('pythonprgm.file', '.', 'py')
+'1.pythonprgm.py'.rpartition('.') #('1.pythonprgm', '.', 'py')
+
+
+
+file #['Hello', 'world', 'python', 'program']
+file='''Hello
+world
+python
+program
+'''
+file.split('\n') #['Hello', 'world', 'python', 'program', '']
+
+#7.Whitespace & Trimming Methods
+#strip(chars)
+
+s='           python          '
+s.strip() #'python'
+
+#lstrip(chars)
+
+s.lstrip() #'python          '
+
+#rstrip(chars)
+
+s.rstrip() #'           python'
+s #'           python          '
+
+#8.Encoding & Decoding Methods
+#encode(encoding)-Converts string to bytes
+#decode(decoding)-Converts bytes back to string
+
+s.encode() #b'           python          '
+text = "Hello 🙂"
+text.encode() #b'Hello \xf0\x9f\x99\x82'
+
+b'Hello \xf0\x9f\x99\x82'.decode() #'Hello 🙂'
+
+text="नमते你好"
+text.encode() #b'\xe0\xa4\xa8\xe0\xa4\xae\xe0\xa4\xa4\xe0\xa5\x87\xe4\xbd\xa0\xe5\xa5\xbd'
+
+b'\xe0\xa4\xa8\xe0\xa4\xae\xe0\xa4\xa4\xe0\xa5\x87\xe4\xbd\xa0\xe5\xa5\xbd'.decode() #'नमते你好'
+
+'banana'.count('na') #2
+'abcbcbc'.count('cbc') #1
+
+'tarit'.maketrans('a','@') #{97: 64}
+'tarit'.translate('tarit'.maketrans('a','@')) #'t@rit'
+'tarit'.translate(str.maketrans('a','@')) #'t@rit'
