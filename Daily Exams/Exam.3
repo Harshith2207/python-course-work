@@ -1,0 +1,114 @@
+''' MCQ - 10 :: Coding Questions - 04 '''
+
+''' MCQ Q/A '''
+
+Question:
+What is the output of [1, 2, 3].pop(0) in Python?
+Options:
+A: 1 #Correct Answer
+B: 2
+C: 3
+D: [2, 3]
+
+Question:
+What is the result of len([10, 20, 30, 40]) in Python?
+Options:
+A: 3
+B: 4 #Correct Answer
+C: 5
+D: 0
+
+Question:
+What operation removes and returns the last element of a list?
+Options:
+A: remove()
+B: delete()
+C: pop() #Correct Answer
+D: clear()
+
+Question:
+What is the output of [1, 2, 3][::-1] in Python?
+Options:
+A: [3, 2, 1] #Correct Answer
+B: [1, 2, 3]
+C: [2, 1, 3]
+D: [1, 3, 2]
+
+Question:
+What is the index of the first element in a Python list? By default.
+Options:
+A: 1
+B: 0 #Correct Answer
+C: -1
+D: First
+
+Question:
+What does [4, 5, 6].pop() return in Python?
+Options:
+A: 4
+B: 5
+C: 6 #Correct Answer
+D: [4, 5] 
+
+Question:
+Which function reverses the order of elements in a list in-place?
+Options:
+A: reversed()
+B: reverse() #Correct Answer
+C: flip()
+D: invert()
+
+Question:
+What does [8, 9].append(10) return in Python?
+Options:
+A: [8, 9, 10]
+B: [8, 9]
+C: 10
+D: None #Correct Answer
+
+Question:
+What is the result of len([5, 10, 15]) in Python?
+Options:
+A: 2
+B: 3 #Correct Answer
+C: 4
+D: 0
+
+Question:
+What does [2, 3, 4][1] return in Python?
+Options:
+A: 2
+B: 3 #Correct Answer
+C: 4
+D: 0
+
+''' Coding problems '''
+
+Question:
+Write a program to print the first element of given list
+Source code:
+            s = list(map(int, input().strip('[]').split(',')))
+            print(s[0])
+
+
+Question:
+Write a program to print last three numbers of a list
+Source code:
+            s = list(map(int, input().strip('[]').split(',')))
+            print(s[-3:])
+
+
+Question:
+Write a program to print the last element of the given list
+Source code:
+            s = list(map(int, input().strip('[]').split(',')))
+            print(s[-1])
+
+
+Question:
+Write a program to print the list with decimal values
+Source code:
+            s = input().strip()
+            s = s[1:-1]
+            s = list(map(float, s.split(',')))
+            print(s)
