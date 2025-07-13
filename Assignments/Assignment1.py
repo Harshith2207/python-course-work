@@ -22,8 +22,8 @@ Trainer_contact = input("Trainer Contact No: ")
 Trainer_location = input("Trainer Location: ")
 
 # From Chaos to Clean: Sanitizing Stats Like a Pro
-Monster_types = [t.strip() for t in types]
-Monster_abilities = tuple(a.strip() for a in abilities)
+Monster_types = [t.strip() for t in Monster_types]
+Monster_abilities = tuple(a.strip() for a in Monster_abilities)
 
 print("\n Successfully Saved Pokemon Data, Jara Rukho Bhai Generating summary...\n")
 
@@ -37,7 +37,7 @@ print("Abilities:", *Monster_abilities, sep=", ")
 print("‍Trainer Info:", Trainer_name, Trainer_location, sep=", ")
 
 # Catch Status - (% Operator) -> Percentage Foramtting
-print("CP:%.2f" %cp)
+print("CP:%.2f" %Monster_cp)
 print("Catch Rate:%.1f%%" %catch_rate)
 
 # Speak Like a Pro Trainer: Do the Talking - Using (f"")->(f-strings)

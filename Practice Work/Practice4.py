@@ -1,8 +1,13 @@
-# Leap Year Checker
+print("Right Angled Triangle")
+n=5
+for i in range(1,n+1):
+    print(" "*(n-i)+"*"*i)
 
-year = int(input("Enter the year: "))
+print("\n Inverted Right-Angled Triangle")
+for i in range(n,0,-1):
+    print("*"*i)
 
-if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
-    print("It is a leap year")
-else:
-    print("It is not a leap year")
+print("\nPattern printing Series")
+for i in range(5):
+    print("*"*5)
+
