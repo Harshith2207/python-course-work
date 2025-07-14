@@ -28,7 +28,7 @@ Trainer Location: Hyderabad
 ==================================================
 Types:, Fire, Flying
 Abilities:, Fire Blast, Fire Spin
-‍Trainer Info:, Harshith, Hyderabad
+‍Trainer Info: Harshith, Hyderabad
 CP:220.70
 Catch Rate:97.5%
 ID:2207
