@@ -34,7 +34,7 @@ print("="*50, "\n POKÉMON GO DATA SUMMARY\n" + "="*50)
 # List All Elements - Using (sep=',') -> Comma separation
 print("Types:", *Monster_types, sep=", ")
 print("Abilities:", *Monster_abilities, sep=", ")
-print("‍Trainer Info:", Trainer_name, Trainer_location, sep=", ")
+print("‍Trainer Info: Trainer_name, Trainer_location", sep=", ")
 
 # Catch Status - (% Operator) -> Percentage Foramtting
 print("CP:%.2f" %Monster_cp)
