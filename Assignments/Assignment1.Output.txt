@@ -1,43 +1,38 @@
-''' ============================================================================================'''
-                    '''  ASSIGNMENT_OUTPUT '''
-''' ============================================================================================
-
 ************************************************** 
  Welcome to the Pokémon GO Product Info System 
 **************************************************
 
  -- Entering the Monster & Pokemon Trainer details -- 
 
-Pokémon ID: 2207
-Pokemon Name: Charizard
-Pokemon Combat Power: 220.7
-Pokemon Types: Fire, Flying
-Pokemon Hit Points: 220
-Pokemon Stamina: 3000
-Pokemon Catch Rate in %: 97.5
-Pokemon Abilities: Fire Blast, Fire Spin
+Pokémon ID: 025
+Pokemon Name: Pikachu
+Pokemon Combat Power: 320
+Pokemon Types: electric
+Pokemon Hit Points: 80
+Pokemon Stamina: 50
+Pokemon Abilities: Static, Lightning Rod
 
-Trainer Name: Harshith
-Trainer Contact No: 9666674055
-Trainer Location: Hyderabad
+Trainer Name: Ash Ketchum
+Trainer Contact No: 999-888-7777
+Trainer Location: Pallet Town
 
  Successfully Saved Pokemon Data, Jara Rukho Bhai Generating summary...
 
 ================================================== 
  POKÉMON GO DATA SUMMARY
 ==================================================
-Types:, Fire, Flying
-Abilities:, Fire Blast, Fire Spin
-‍Trainer Info: Harshith, Hyderabad
-CP:220.70
-Catch Rate:97.5%
-ID:2207
-Name:Charizard |HP:220 | Stamina:3000
-Contact:9666674055
- 'Charizard' has CP of 220.70 and catch rate of 97.5%.
-Located in Hyderabad and trained by Harshith.
+Types: electric
+Abilities: Static, Lightning Rod
+‍Trainer Info: Trainer_name, Trainer_location
+CP:320.00
+Catch Rate:4.1%
+ID:025
+Name:Pikachu |HP:80 | Stamina:50
+Contact:999-888-7777
+ 'Pikachu' has CP of 320.00 and catch rate of 4.1%.
+Located in Pallet Town and trained by Ash Ketchum.
 
-==================================================
+================================================== 
  Thanks for using Pokémon GO Info System!
  Show the skills and catch 'em all! 
-================================================== '''
+==================================================
