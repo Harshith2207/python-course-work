@@ -2,7 +2,7 @@ import random
 
 def generatePassword(pwlength):
 
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    alphabet = "abcdefghijklmnopqrstuvwxyz@$%^&*)_=+~~!1234567890"
 
     passwords = [] 
 

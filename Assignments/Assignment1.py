@@ -39,7 +39,7 @@ print("CP:%.2f" % Monster_cp)
 print("Catch Rate:%.1f%%" % catch_rate)
 
 print(f"ID:{Monster_id}")
-print(f"Name:{Monster_name} |HP:{Monster_hp} | Stamina:{Monster_stamina}")
+print(f"Name:{Monster_name} | HP:{Monster_hp} | Stamina:{Monster_stamina}")
 print(f"Contact:{Trainer_contact}")
 
 print(" '{}' has CP of {:.2f} and catch rate of {:.1f}%.".format(Monster_name, Monster_cp, catch_rate))
