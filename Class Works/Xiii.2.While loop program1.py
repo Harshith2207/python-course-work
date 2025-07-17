@@ -1,3 +1,5 @@
+#while loop program
+
 bullets=10
 while bullets>0:
     if bullets<3:
