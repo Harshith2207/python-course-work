@@ -1,48 +1,46 @@
-#Inputs in the code
-
-Pokémon ID: 006
-Pokemon Name: Charizard
-Pokemon Combat Power: 400.0
-Pokemon Types: fire, flying
-Pokemon Hit Points: 120
-Pokemon Stamina: 90
-Pokemon Abilities: Blaze, Solar Power
-
-Trainer Name: Harshith
-Trainer Contact No: 9666674055
-Trainer Location: Hyderabad
-
-#Output for the code
-
 ************************************************** 
  Welcome to the Pokémon GO Product Info System 
 **************************************************
 
  -- Entering the Monster & Pokemon Trainer details -- 
 
+Pokémon ID: 2207
+Pokemon Name: Charizard
+Pokemon Combat Power: 1000 
+Pokemon Types: Fire,Flying
+Pokemon Hit Points: 400
+Pokemon Stamina: 200
+Pokemon Abilities: Firepunch,Fireblast
+
+Trainer Name: Harshith
+Trainer Contact No: 9666674055
+Trainer Location: Hyderabad
+
  Successfully Saved Pokemon Data, Jara Rukho Bhai Generating summary...
 
-================================================== 
+==================================================
  POKÉMON GO DATA SUMMARY
 ==================================================
-Types (list): fire, flying
-Abilities (tuple): Blaze, Solar Power
-Unique Abilities (set): {'Blaze', 'Solar Power'}
+Types (list):, Fire, Flying
+Abilities (tuple):, Firepunch, Fireblast
+Unique Abilities (set): {'Firepunch', 'Fireblast'}
 Available (bool): True
-‍Trainer Info (str): Harshith, Hyderabad
-CP (float): 400.00
-Catch Rate (float): 5.2%
-ID (str):006
-Name (str):Charizard | HP (int):120 | Stamina (int):90
+‍Trainer Info (str):, Harshith, Hyderabad
+CP (float): 1000.00
+Catch Rate (float): 6.0%
+ID (str):2207
+Name (str):Charizard | HP (int):400 | Stamina (int):200
 Contact (str):9666674055
- 'Charizard' has CP of 400.00 and catch rate of 5.2%.
+
+ Hit the Monster with Water type moves, Fire is weaker to water
+Catch the Monster with Ultra Ball, This one is unpredictable like a girl
+
+ 'Charizard' has CP of 1000.00 and catch rate of 6.0%.
 Located in Hyderabad and trained by Harshith.
 
-Dictionary (dict): {'ID': '006', 'Name': 'Charizard', 'CP': 400.0, 'HP': 120, 'Stamina': 90, 'Catch Rate': 5.197506234413965,
-'Types': ['fire', 'flying'], 'Abilities': ('Blaze', 'Solar Power'), 'Trainer': {'Name': 'Harshith', 'Contact': '9666674055',
-'Location': 'Hyderabad'}, 'Available': True, 'Unique Abilities': {'Blaze', 'Solar Power'}, 'Future Feature': None}
+Dictionary (dict): {'ID': '2207', 'Name': 'Charizard', 'CP': 1000.0, 'HP': 400, 'Stamina': 200, 'Catch Rate': 5.994005994005994, 'Types': ['Fire', 'Flying'], 'Abilities': ('Firepunch', 'Fireblast'), 'Trainer': {'Name': 'Harshith', 'Contact': '9666674055', 'Location': 'Hyderabad'}, 'Available': True, 'Unique Abilities': {'Firepunch', 'Fireblast'}, 'Future Feature': None}
 
-================================================== 
+==================================================
  Thanks for using Pokémon GO Info System!
- Show the skills and catch 'em all! 
+ Show the skills and catch 'em all!
 ==================================================

@@ -66,6 +66,17 @@ print(f"ID (str):{Monster_id}")
 print(f"Name (str):{Monster_name} | HP (int):{Monster_hp} | Stamina (int):{Monster_stamina}")
 print(f"Contact (str):{Trainer_contact}")
 
+if Monster_cp > 500:
+    print("\n Hit the Monster with Water type moves, Fire is weaker to water")
+    print("Catch the Monster with Ultra Ball, This one is unpredictable like a girl \n")
+elif Monster_cp > 300:
+    print("You have almost there brooo, Hit 5 more times to make Monster weaken")
+elif Monster_cp > 100:
+    print("Use a Great Ball, It's easier to catch")
+else:
+    print("You can Catch the Monster with normal ball easily")
+
+
 print(" '{}' has CP of {:.2f} and catch rate of {:.1f}%.".format(Monster_name, Monster_cp, catch_rate))
 print("Located in {} and trained by {}.".format(Trainer_location, Trainer_name))
 
