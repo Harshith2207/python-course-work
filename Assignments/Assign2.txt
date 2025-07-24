@@ -1,0 +1,67 @@
+''' Input '''
+
+Enter the number of messages: 8
+
+Ash: Pikachu, I choose you!
+Gary Oak: Tch. You still use that weak Pikachu?
+Prof Oak: Ash, remember to record data in your Pokédex.
+Ash: Don’t listen to him, Pikachu is the best!
+Paul: I don’t get why you coddle your Pokémon.
+Ash: My Pokémon are my friends!
+Gary Oak: Hah! That’s why you always lose.
+Prof Oak: Calm down, both of you.
+
+''' Output '''
+
+Full Conversation by Each User:
+
+Ash's Messages:
+  - Pikachu, I choose you!
+  - Don’t listen to him, Pikachu is the best!
+  - My Pokémon are my friends!
+
+Gary Oak's Messages:
+  - Tch. You still use that weak Pikachu?
+  - Hah! That’s why you always lose.
+
+Prof Oak's Messages:
+  - Ash, remember to record data in your Pokédex.
+  - Calm down, both of you.
+
+Paul's Messages:
+  - I don’t get why you coddle your Pokémon.
+
+''' Options '''
+
+Choose an option:
+1. Total messages
+2. Unique users
+3. Total words
+4. Avg words per message
+5. Most active user
+6. User's messages
+Type 'exit' to stop
+
+Enter option: 1
+Total messages: 8
+
+Enter option: 2
+Unique users: {'Ash', 'Gary Oak', 'Prof Oak', 'Paul'}
+
+Enter option: 3
+Total words: 56
+
+Enter option: 4
+Average words per message: 7.0
+
+Enter option: 5
+Most active user: Ash (3 messages)
+
+Enter option: 6
+Enter user name: Prof Oak
+
+Messages by Prof Oak:
+  - Ash, remember to record data in your Pokédex.
+  - Calm down, both of you.
+
+Enter option: exit
