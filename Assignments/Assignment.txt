@@ -1,0 +1,74 @@
+Enter the number of messages: 10
+
+Ash: Hey everyone, ready for today's adventure?
+Misty: Absolutely! Where are we heading today?
+Brock: I packed some lunch for all of us!
+Pikachu: Pika Pika!
+Ash: We’ll explore Viridian Forest.
+Misty: I hope we don’t run into Team Rocket again...
+Brock: Don’t worry, I brought repel spray!
+Ash: That’s smart, Brock.
+Misty: Anyone seen Togepi?
+Ash: This message was deleted
+
+----- Sample Outputs -----
+
+Total messages: 10
+
+Unique users in the chat: {'Ash', 'Misty', 'Brock', 'Pikachu'}
+
+Total words in the chat: 52
+
+Average words per message: 5.2
+
+Longest message: "Ash: Hey everyone, ready for today's adventure?"
+
+Most active user: Ash (4 messages)
+
+Messages sent by Misty: 3
+
+Most frequent word used by Ash: "we’ll"
+
+First message by Misty: "Misty: Absolutely! Where are we heading today?"
+Last message by Misty: "Misty: Anyone seen Togepi?"
+
+User 'Jessie' not found in the chat.
+
+Common repeated words: {'we', 'are', 'i', 'us', 'today?', 'pika'}
+
+User with longest average message: Brock (avg 6.0 words)
+
+Messages mentioning 'Misty': 0
+
+Unique messages count: 10
+- Ash: Hey everyone, ready for today's adventure?
+- Ash: That’s smart, Brock.
+- Ash: This message was deleted
+- Ash: We’ll explore Viridian Forest.
+- Brock: Don’t worry, I brought repel spray!
+- Brock: I packed some lunch for all of us!
+- Misty: Absolutely! Where are we heading today?
+- Misty: Anyone seen Togepi?
+- Misty: I hope we don’t run into Team Rocket again...
+- Pikachu: Pika Pika!
+
+Messages sorted alphabetically:
+- Ash: Hey everyone, ready for today's adventure?
+- Ash: That’s smart, Brock.
+- Ash: This message was deleted
+- Ash: We’ll explore Viridian Forest.
+- Brock: Don’t worry, I brought repel spray!
+- Brock: I packed some lunch for all of us!
+- Misty: Absolutely! Where are we heading today?
+- Misty: Anyone seen Togepi?
+- Misty: I hope we don’t run into Team Rocket again...
+- Pikachu: Pika Pika!
+
+Questions in the chat:
+- Ash: Hey everyone, ready for today's adventure?
+- Misty: Absolutely! Where are we heading today?
+- Misty: Anyone seen Togepi?
+
+Reply ratio from Misty to Ash: 2 replies
+
+Deleted messages found: 1

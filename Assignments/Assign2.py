@@ -5,7 +5,7 @@ user_messages = {}
 
 num = int(input("Enter the number of messages: "))
 
-# Input and grouping by user
+# Input and grouping by the user
 for _ in range(num):
     msg = input()
     messages.append(msg)
@@ -19,7 +19,7 @@ for _ in range(num):
             user_messages[name] = []
         user_messages[name].append(content)
 
-# Display grouped conversation by user
+# Display grouped conversation by the user
 print("\n Full Conversation by Each User:")
 for user in user_messages:
     print(f"\n{user}'s Messages:")
