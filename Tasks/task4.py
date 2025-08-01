@@ -1,4 +1,5 @@
 # Photo gallery
+
 names={'Sun':1,'Moon':2,'Star':3,'Earth':4,'Mercury':5,'Venus':6,'Mars':7,'Neptune':8,'Jupyter':9}
 print("Enter photo {names} you want to share:")
 photos=input()
