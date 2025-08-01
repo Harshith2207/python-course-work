@@ -1,13 +1,12 @@
-print("Right Angled Triangle")
-n=5
-for i in range(1,n+1):
-    print(" "*(n-i)+"*"*i)
-
-print("\n Inverted Right-Angled Triangle")
-for i in range(n,0,-1):
-    print("*"*i)
-
-print("\nPattern printing Series")
-for i in range(5):
-    print("*"*5)
-
+pin = "1234"
+tries = 0
+while tries < 3:
+    entered = input("Enter PIN: ")
+    if entered == pin:
+        print("Access granted.")
+        break
+    else:
+        tries += 1
+        print("Wrong PIN.")
+if tries == 3:
+    print("Too many attempts. Card blocked.")
