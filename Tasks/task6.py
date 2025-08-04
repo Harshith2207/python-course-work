@@ -1,9 +1,9 @@
 # MEMORY CAPSULE SYSTEM
 # Capsule Data Stored in Variables & Lists
 
-capsule_id = 2024
+capsule_id = 2025
 capsule_title = "To My Future Son"
-author_name = "Arjun"
+author_name = "Harshith"
 author_role = "Father"
 author_country = "India"
 unlock_year = 2050

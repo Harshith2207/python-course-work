@@ -1,17 +1,35 @@
 from pytube import YouTube
+from urllib.parse import urlparse, parse_qs
+import re
 
-try:
-    url = input("Enter YouTube URL: ").strip()
-    
-    # If a playlist URL is given, extract only video part
-    if "&" in url:
-        url = url.split("&")[0]  # take only the video link
+def extract_video_id(url):
+    parsed = urlparse(url)
+    if 'youtube' in parsed.netloc:
+        query = parse_qs(parsed.query)
+        return query.get('v', [None])[0]
+    match = re.search(r"(?:v=|\/)([0-9A-Za-z_-]{11})", url)
+    return match.group(1) if match else None
 
-    yt = YouTube(url)
-    stream = yt.streams.get_highest_resolution()
-    print("Downloading...")
-    stream.download()
-    print("Download complete!")
+def download_youtube_video():
+    try:
+        url = input("Enter YouTube URL: ").strip()
+        video_id = extract_video_id(url)
+        if not video_id:
+            raise ValueError("Invalid YouTube URL.")
+        clean_url = f"https://www.youtube.com/watch?v={video_id}"
 
-except Exception as e:
-    print(f"Error: {e}")
+        yt = YouTube(clean_url)
+        stream = yt.streams.get_highest_resolution()
+        if not stream:
+            raise ValueError("No downloadable stream found.")
+
+        print(f"\nTitle: {yt.title}")
+        print("Downloading video...")
+        stream.download()
+        print("Download complete!")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    download_youtube_video()
