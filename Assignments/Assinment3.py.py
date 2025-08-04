@@ -103,7 +103,7 @@ if ans10 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("\n ->B Is the Right Answer >>> There's no next to try, check results and join in office <<<")
+    print("\n ->b Is the Right Answer >>> There's no next to try, check results and join in office <<<")
 
 # Final Salary Result
 print("\n <<- INTERVIEW RESULT ->>")
