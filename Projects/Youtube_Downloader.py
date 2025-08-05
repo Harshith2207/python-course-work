@@ -4,7 +4,9 @@ import re
 
 def extract_video_id(url):
     parsed = urlparse(url)
-    if 'youtube' in parsed.netloc:
+    if 'youtube' in parsed.netloc or 'youtu.be' in parsed.netloc:
+        if 'youtu.be' in parsed.netloc:
+            return parsed.path.strip("/")
         query = parse_qs(parsed.query)
         return query.get('v', [None])[0]
     match = re.search(r"(?:v=|\/)([0-9A-Za-z_-]{11})", url)
@@ -16,20 +18,18 @@ def download_youtube_video():
         video_id = extract_video_id(url)
         if not video_id:
             raise ValueError("Invalid YouTube URL.")
-        clean_url = f"https://www.youtube.com/watch?v={video_id}"
 
+        clean_url = f"https://www.youtube.com/watch?v={video_id}"
         yt = YouTube(clean_url)
-        stream = yt.streams.get_highest_resolution()
-        if not stream:
-            raise ValueError("No downloadable stream found.")
 
         print(f"\nTitle: {yt.title}")
         print("Downloading video...")
+        stream = yt.streams.get_highest_resolution()
         stream.download()
-        print("Download complete!")
+        print("✅ Download complete!")
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"❌ An error occurred: {e}")
 
 if __name__ == "__main__":
     download_youtube_video()
