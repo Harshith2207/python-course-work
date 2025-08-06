@@ -16,12 +16,6 @@ print("squares_lambda:",squares_lambda(52))
 
 #EvenOrOdd
 def evenorodd(n):
-    if n%2==0:
-        print("Even")
-    else:
-        print("Odd")
-evenorodd(12)
-evenorodd(13)
 evenorodd_lambda=lambda n: "Even" if n%2==0 else "Odd"
 print("evenorodd_lambda",evenorodd_lambda(4))
 print("evenorodd_lambda",evenorodd_lambda(43))
@@ -75,6 +69,3 @@ print("Available Laptops:", l)
 print("Laptops under ₹45000:", k)
 print("Black Color Laptops:", c)
 
-
-l=["tarit","harshith","varun","kiran"]
-u=list(map(

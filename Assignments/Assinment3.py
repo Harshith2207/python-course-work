@@ -13,7 +13,7 @@ if ans1 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->b Is the Right Answer")
+    print("~> Wrong answer, \n -> b Is the Right Answer")
 
 # Q2
 print("\n 2. What is the difference between a list and a tuple?")
@@ -23,7 +23,7 @@ if ans2 == "c":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->c Is the Right Answer")
+    print("~> Wrong answer, \n -> c Is the Right Answer")
 
 # Q3
 print("\n 3. How does Python manage memory?")
@@ -33,7 +33,7 @@ if ans3 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->b Is the Right Answer")
+    print("~> Wrong answer, \n -> b Is the Right Answer")
 
 # Q4
 print("\n 4. What is the difference between deep copy and shallow copy?")
@@ -43,7 +43,7 @@ if ans4 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->b Is the Right Answer")
+    print("~> Wrong answer, \n -> b Is the Right Answer")
 
 # Q5
 print("\n 5. What are Python’s built-in data types?")
@@ -53,7 +53,7 @@ if ans5 == "a":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->a Is the Right Answer")
+    print("~> Wrong answer, \n -> a Is the Right Answer")
 
 # Q6
 print("\n 6. What are Python’s mutable and immutable data types?")
@@ -63,7 +63,7 @@ if ans6 == "a":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->a Is the Right Answer")
+    print("~> Wrong answer, \n -> a Is the Right Answer")
 
 # Q7
 print("\n 7. What is the difference between 'is' and '=='?")
@@ -73,7 +73,7 @@ if ans7 == "c":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->c Is the Right Answer")
+    print("~> Wrong answer, \n -> c Is the Right Answer")
 
 # Q8
 print("\n 8. How does Python handle memory management?")
@@ -83,7 +83,7 @@ if ans8 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->b Is the Right Answer")
+    print("~> Wrong answer, \n -> b Is the Right Answer")
 
 # Q9
 print("\n 9. What is PEP 8, and why is it important?")
@@ -93,7 +93,7 @@ if ans9 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("~> Wrong answer, \n ->b Is the Right Answer")
+    print("~> Wrong answer, \n -> b Is the Right Answer")
 
 # Q10
 print("\n 10. What are Python namespaces?")
@@ -103,7 +103,7 @@ if ans10 == "b":
     salary += 10000
     print("+> Correct answer")
 else:
-    print("\n ->b Is the Right Answer >>> There's no next to try, check results and join in office <<<")
+    print("\n -> b Is the Right Answer >>> There's no next to try, check results and join in office <<<")
 
 # Final Salary Result
 print("\n <<- INTERVIEW RESULT ->>")
