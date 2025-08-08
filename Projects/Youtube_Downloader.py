@@ -1,35 +1,41 @@
 from pytube import YouTube
 from urllib.parse import urlparse, parse_qs
-import re
 
-def extract_video_id(url):
+def clean_youtube_url(url: str) -> str:
+    """
+    Cleans the YouTube URL by extracting the video ID and returning
+    a canonical watch URL that pytube can handle.
+    """
     parsed = urlparse(url)
-    if 'youtube' in parsed.netloc or 'youtu.be' in parsed.netloc:
-        if 'youtu.be' in parsed.netloc:
-            return parsed.path.strip("/")
-        query = parse_qs(parsed.query)
-        return query.get('v', [None])[0]
-    match = re.search(r"(?:v=|\/)([0-9A-Za-z_-]{11})", url)
-    return match.group(1) if match else None
+    if 'youtu.be' in parsed.netloc:
+        video_id = parsed.path.strip("/")
+        return f"https://www.youtube.com/watch?v={video_id}"
+    if 'youtube.com' in parsed.netloc:
+        qs = parse_qs(parsed.query)
+        video_id = qs.get('v', [None])[0]
+        if video_id:
+            return f"https://www.youtube.com/watch?v={video_id}"
+    # fallback if input is already clean or just video ID
+    return url
 
-def download_youtube_video():
+def download_video(url: str):
     try:
-        url = input("Enter YouTube URL: ").strip()
-        video_id = extract_video_id(url)
-        if not video_id:
-            raise ValueError("Invalid YouTube URL.")
+        clean_url = clean_youtube_url(url)
+        print(f"Harshith's Downloader: Processing URL -> {clean_url}")
 
-        clean_url = f"https://www.youtube.com/watch?v={video_id}"
         yt = YouTube(clean_url)
+        print(f"🎬 Title: {yt.title}")
+        print("🚀 Starting download...")
 
-        print(f"\nTitle: {yt.title}")
-        print("Downloading video...")
         stream = yt.streams.get_highest_resolution()
         stream.download()
-        print("✅ Download complete!")
 
+        print("✅ Download complete! Thanks for using Harshith's Downloader.")
     except Exception as e:
-        print(f"❌ An error occurred: {e}")
+        print(f"❌ Oops! An error occurred: {e}")
+        print("Make sure your pytube package is up to date by running:")
+        print("   pip install --upgrade pytube")
 
 if __name__ == "__main__":
-    download_youtube_video()
+    video_url = input("Enter YouTube URL: ").strip()
+    download_video(video_url)
