@@ -1,0 +1,83 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+->>> PYTHON SALARY VIA COMPANY INTERVIEW QUIZ <<<- 
+	 ->> Select the answer either a/b/c <<-
+		 -> Increase your salary with every correct answer <-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. What are Python’s key features?
+a) Slow, complex, and compiled
+b) Easy, interpreted, dynamic, multi-paradigm
+c) Assembly-level coding
+Your answer: b
++> Correct answer
+
+ 2. What is the difference between a list and a tuple?
+a) Tuple is mutable, List is not
+b) Both are the same
+c) List is mutable, Tuple is not
+Your answer: c
++> Correct answer
+
+ 3. How does Python manage memory?
+a) Uses a memory stick
+b) Garbage collection & private heap
+c) Manual memory management
+Your answer: b
++> Correct answer
+
+ 4. What is the difference between deep copy and shallow copy?
+a) Deep copy copies references, shallow copies values
+b) Shallow copy shares references, deep copy creates new copies
+c) They are the same
+Your answer: b
++> Correct answer
+
+ 5. What are Python’s built-in data types?
+a) string, int, list, dict, tuple, set
+b) matrix, pointer, queue
+c) page, section, column
+Your answer: a
++> Correct answer
+
+ 6. What are Python’s mutable and immutable data types?
+a) Mutable: list, dict | Immutable: int, str, tuple
+b) All are immutable
+c) Mutable: str | Immutable: dict
+Your answer: a
++> Correct answer
+
+ 7. What is the difference between 'is' and '=='?
+a) 'is' checks value, '==' checks memory
+b) Both are the same
+c) 'is' checks memory, '==' checks value
+Your answer: c
++> Correct answer
+
+ 8. How does Python handle memory management?
+a) Uses robots
+b) Reference counting and garbage collection
+c) No memory management
+Your answer: b
++> Correct answer
+
+ 9. What is PEP 8, and why is it important?
+a) Python Electricity Protocol
+b) Style guide to maintain clean and readable code
+c) Game mod for Python
+Your answer: a
+~> Wrong answer, 
+ -> b Is the Right Answer
+
+ 10. What are Python namespaces?
+a) Space-themed variables
+b) Mapping of names to objects
+c) Memory leaks area
+Your answer: b
++> Correct answer
+
+ <<- INTERVIEW RESULT ->>
+
+ * Final Salary Package Offered: 90000 INR/year
+
+ * Great work! You got placed at: Amazon / TCS Digital 
+
+ * You can buy Alekhya Chitti Pickles of Prawns pickle - 1kg
