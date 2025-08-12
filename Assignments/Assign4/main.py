@@ -7,7 +7,7 @@ def main():
         print("\n" + "=".rjust(53, "="))
         print("\n<--- Functions You Didn’t Know You Needed --->")
         print("     -------------------------------------")
-        print("\nrev_spell     → Reverse a String")
+        print("\nrev_spell   → Reverse a String")
         print("freq_potion   → Character Frequency Counter")
         print("cleanse_list  → Remove Duplicates from List")
         print("shared_runes  → Find Common Elements")

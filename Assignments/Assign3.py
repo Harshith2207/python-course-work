@@ -121,4 +121,4 @@ elif salary >= 40000:
 elif salary >= 20000:
     print("\n * You got placed at: Teleperformance / Concentrix \n\n * You can buy Alekhya Chitti Pickles of Chicken pickle - 1/4kg")
 else:
-    print("\n * Keep learning! For best Training & results join in codegnan IT solutions brooo... \n\n * If not you can't even buy even a 50gm in Alekhya Chitti Pickels")
+    print("\n * Keep learning! For best Training & results join in codegnan IT solutions brooo... \n\n * If not you can't even buy even a 50g in Alekhya Chitti Pickels")
