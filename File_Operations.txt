@@ -1,0 +1,10 @@
+File Operations
+===============
+
+r - read
+w - write
+a - append
+r+ - read+write
+w+ - write+read
+a+ - append+read
+
