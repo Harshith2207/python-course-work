@@ -68,7 +68,7 @@ def process_command(command):
         else:
             speak("What do you want me to search for?")
     elif "stop" in command or "exit" in command:
-        speak("Goodbye!")
+        speak("Lets Breakup!")
         exit()
     else:
         speak("I am not sure how to do that.")
