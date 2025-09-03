@@ -1,0 +1,79 @@
+OOPS Concepts inside the code...
+-----------------------------
+Encapsulation: Pokémon & Trainer data + methods bound inside classes.
+
+Abstraction: Catch rate calculation & dictionary conversion hidden with private methods (__calculate_catch_rate, __as_dict).
+
+Inheritance: Both Pokemon & Trainer inherit from Entity.
+
+Polymorphism: summary() behaves differently for Pokémon & Trainer.
+
+
+
+************************************************** 
+ Welcome to the Pokémon GO Product Info System (OOP Edition) 
+**************************************************
+
+ -- Entering the Monster & Pokemon Trainer details -- 
+
+Pokémon ID: 001
+Pokemon Name: Bulbasaur
+Pokemon Combat Power: 450
+Pokemon Types (comma separated): Grass, Poison
+Pokemon Hit Points: 120
+Pokemon Stamina: 80
+Pokemon Abilities (comma separated): Overgrow, Chlorophyll
+
+Trainer Name: Ash Ketchum
+Trainer Contact No: 9876543210
+Trainer Location: Pallet Town
+
+ Successfully Saved Pokemon Data, Jara Rukho Bhai Generating summary...
+
+
+================================================== 
+ POKÉMON SUMMARY: Bulbasaur
+==================================================
+Types (list): Grass, Poison
+Abilities (tuple): Overgrow, Chlorophyll
+Unique Abilities (set): {'Overgrow', 'Chlorophyll'}
+Available (bool): True
+CP (float): 450.00
+Catch Rate (float): 4.4%
+ID (str): 001
+Name (str): Bulbasaur | HP (int): 120 | Stamina (int): 80
+You have almost there brooo, Hit 5 more times to make Monster weaken
+'Bulbasaur' has CP of 450.00 and catch rate of 4.4%.
+
+================================================== 
+ TRAINER SUMMARY: Ash Ketchum
+==================================================
+Name: Ash Ketchum
+Contact: 9876543210
+Location: Pallet Town
+
+Dictionary (dict): {
+ 'Pokemon': {
+    'ID': '001', 
+    'Name': 'Bulbasaur', 
+    'CP': 450.0, 
+    'HP': 120, 
+    'Stamina': 80, 
+    'Catch Rate': 4.439022028947368, 
+    'Types': ['Grass', 'Poison'], 
+    'Abilities': ('Overgrow', 'Chlorophyll'), 
+    'Available': True, 
+    'Unique Abilities': {'Overgrow', 'Chlorophyll'}, 
+    'Future Feature': None
+  }, 
+  'Trainer': {
+    'Name': 'Ash Ketchum', 
+    'Contact': '9876543210', 
+    'Location': 'Pallet Town'
+  }
+}
+
+==================================================
+ Thanks for using Pokémon GO Info System!
+ Show the skills and catch 'em all! 
+==================================================
