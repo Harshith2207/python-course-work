@@ -1,92 +1,53 @@
-from pptx import Presentation
-from pptx.util import Inches, Pt
-from pptx.dml.color import RGBColor
+import playsound
+from gtts import gTTS
+import random
+import os
 
-prs = Presentation()
+# -------------------------------
+# Helper Functions
+# -------------------------------
 
-def add_story_slide(title, story_lines, code_snippet, image_path=None):
-    slide = prs.slides.add_slide(prs.slide_layouts[5])
-    slide.shapes.title.text = title
-    
-    # Add optional image
-    if image_path:
-        try:
-            slide.shapes.add_picture(image_path, Inches(0.3), Inches(1.5), height=Inches(3))
-        except FileNotFoundError:
-            pass  # Skip if no image found
+def speak(text):
+    """Convert text to speech and play it."""
+    tts = gTTS(text=text, lang='en')
+    filename = f"voice_{random.randint(1,10000)}.mp3"
+    tts.save(filename)
+    playsound.playsound(filename)
+    os.remove(filename)
 
-    # Add story text
-    text_box = slide.shapes.add_textbox(Inches(3.8), Inches(1.2), Inches(5), Inches(3))
-    tf = text_box.text_frame
-    tf.word_wrap = True
-    for line in story_lines:
-        p = tf.add_paragraph()
-        p.text = line
-        p.font.size = Pt(16)
-        p.font.name = "Segoe UI"
-    
-    # Add code box
-    if code_snippet:
-        code_box = slide.shapes.add_textbox(Inches(3.8), Inches(3.5), Inches(5), Inches(2))
-        tf_code = code_box.text_frame
-        run = tf_code.paragraphs[0].add_run()
-        run.text = code_snippet
-        run.font.name = 'Consolas'
-        run.font.size = Pt(14)
-        run.font.color.rgb = RGBColor(255, 255, 255)
-        code_box.fill.solid()
-        code_box.fill.fore_color.rgb = RGBColor(30, 30, 30)
+def sing_song(song_lines):
+    """Sing each line of the song continuously without delay."""
+    for line in song_lines:
+        speak(line)
 
-# Slide 1 – Title
-slide = prs.slides.add_slide(prs.slide_layouts[0])
-slide.shapes.title.text = "Lily & Py the Robot Learn Python Functions"
-slide.placeholders[1].text = "A Kid-Friendly Story about User-Defined Functions"
+# -------------------------------
+# Python Proposal Song
+# -------------------------------
 
-# Slide 2 – What is a Function
-add_story_slide(
-    "What is a Function?",
-    ["Lily has a magic robot, Py.", 
-     "Py can do anything, but first Lily must teach it a trick.",
-     "In Python, we teach tricks using 'functions'."],
-    """def say_hello():
-    print("Hello!")
+python_proposal_song = [
+    "Hey Python, will you be mine?",
+    "With your int so strong, and float so fine.",
+    "Your char is cute, your bool is true,",
+    "Oh string, I just want to code with you!",
+    "Int, float, char, bool, string,",
+    "Python, you make my heart sing!",
+    "Lists and dicts, tuples too,",
+    "I promise to always code with you!",
+    "With every loop and function call,",
+    "I fall for you, I want it all.",
+    "Dynamic typing, flexible and free,",
+    "Python, you’re the one for me!",
+    "So here’s my heart, wrapped in a script,",
+    "From variables to modules, forever we’ll be,",
+    "Oh Python, just say yes to me!"
+]
 
-say_hello()  # Py says Hello!""",
-    "robot.png"
-)
+# -------------------------------
+# Main Function
+# -------------------------------
 
-# Slide 3 – With & Without Parameters
-add_story_slide(
-    "With & Without Parameters",
-    ["Sometimes Py needs information to work (parameters).",
-     "Sometimes he just acts with no input."],
-    """def greet(name):
-    print("Hi", name)
-
-def wave():
-    print("*waves*")"""
-)
-
-# Slide 4 – With & Without Return Values
-add_story_slide(
-    "With & Without Return Values",
-    ["Sometimes Py gives back an answer (return).",
-     "Sometimes he just does something without replying."],
-    """def add(a, b):
-    return a + b
-
-def sing():
-    print("La la la!")"""
-)
-
-# Slide 5 – Default Parameters & Summary
-add_story_slide(
-    "Default Parameters & Summary",
-    ["Py has default tricks if you don't tell him exactly what to do.",
-     "Functions make coding easy, reusable, and fun!"],
-    """def greet(name="Friend"):
-    print("Hello", name)"""
-)
-
-prs.save("Lily_and_Py_Functions.pptx")
-print("✅ 5-slide kids-style PPT created: Lily_and_Py_Functions.pptx")
+if __name__ == "__main__":
+    speak("Hello! I have a special song for you.")
+    speak("Let me sing the Python proposal song!")
+    sing_song(python_proposal_song)  # Continuous singing without delay
+    speak("Hope you enjoyed the song! Python loves you!")
