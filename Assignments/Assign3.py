@@ -1,3 +1,5 @@
+#Python Interview Quiz
+
 print("~"*80)
 print("->>> PYTHON SALARY VIA COMPANY INTERVIEW QUIZ <<<- \n\t ->> Select the answer either a/b/c <<-")
 print("\t\t -> Increase your salary with every correct answer <-")

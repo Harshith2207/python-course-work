@@ -1,0 +1,3 @@
+Hello! This is your first sample note. 
+I am very happy today because Python is awesome, 
+but sometimes it feels a little hard.
