@@ -1,4 +1,5 @@
-# MEMORY CAPSULE SYSTEM – PYTHON PROPOSAL EDITION
+# MEMORY CAPSULE SYSTEM
+
 # Capsule Data Stored in Variables & Lists
 
 capsule_id = 2025
